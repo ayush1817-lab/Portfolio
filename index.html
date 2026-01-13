@@ -1186,3 +1186,26 @@
     document.querySelectorAll('.featured-project, .project-card, .about-content, .contact-section').forEach(el => {
       el.style.opacity = '0';
       el.style.transform = 'transla
+
+       // Scroll color animation for About Story
+    const aboutStory = document.querySelector('.about-story');
+
+    window.addEventListener('scroll', () => {
+      const storySection = document.querySelector('.about-section');
+      const sectionTop = storySection.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      
+      const scrollProgress = Math.max(0, Math.min(1, 1 - (sectionTop / windowHeight)));
+      
+      if (scrollProgress > 0.3) {
+        aboutStory.style.color = '#E07A5F';
+        aboutStory.style.transition = 'color 0.5s ease';
+      } else {
+        aboutStory.style.color = '#7A7572';
+        aboutStory.style.transition = 'color 0.5s ease';
+      }
+    });
+
+  </script>
+</body>
+</html>
