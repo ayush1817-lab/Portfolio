@@ -699,7 +699,6 @@
       line-height: 1.9;
       color: var(--text-secondary);
       margin-bottom: 48px;
-      transition: color 0.5s ease;
     }
 
     .about-story strong {
@@ -1209,12 +1208,10 @@
       
       // When section comes into view
       if (rect.top < windowHeight * 0.7 && rect.bottom > 0) {
-        if (aboutStory) aboutStory.style.color = '#E07A5F';
         if (storyHeading) storyHeading.style.color = '#E07A5F';
         if (skillsHeading) skillsHeading.style.color = '#E07A5F';
       } else {
         if (aboutStory) aboutStory.style.color = '#7A7572';
-        if (storyHeading) storyHeading.style.color = '#4A4845';
         if (skillsHeading) skillsHeading.style.color = '#4A4845';
       }
     }
