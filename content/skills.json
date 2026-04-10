@@ -1,0 +1,17 @@
+[
+  {
+    "label": "Product Craft",
+    "items": [
+      "User Research",
+      "Interaction Design",
+      "Systems Thinking",
+      "AI & Conversational UX",
+      "Prototyping",
+      "Design Systems"
+    ]
+  },
+  {
+    "label": "Past Life",
+    "items": ["Motion Design", "3D Animation", "Game Design"]
+  }
+]
